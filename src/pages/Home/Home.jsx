@@ -102,7 +102,8 @@ const Home = () => {
       </section>
 
       {/* tour seciton start */}
-
+      <selection className="popular">
+      </selection>
       <section className="popular py-5">
       <Container>
         <Row>
@@ -119,7 +120,7 @@ const Home = () => {
             <PopularCard val={val} />
           </Col>
         )
-        })}
+        })} 
         </Row>
       </Container>
     </section>
