@@ -1,0 +1,37 @@
+.about_section {
+  padding: 50px 0;
+  background-color: #f9f9f9; /* A light background for contrast */
+}
+
+.about_content h2 {
+  font-size: var(--subTitle); /* Adjust font size if necessary */
+  color: var(--primaryClr);
+  margin-bottom: 20px;
+}
+
+.about_content p {
+  font-size: var(--bodyText);
+  color: var(--black);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about_image img {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.primaryBtn {
+  background: var(--primaryClr);
+  color: var(--white);
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-3px);
+  background: var(--secondaryClr);
+}

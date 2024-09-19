@@ -1,0 +1,36 @@
+.inner-banner-wrap .inner-banner-container {
+    background-image: url("../../assets/images/new/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    background-size: cover;
+    padding-top: 48px;
+    position: relative;
+}
+
+.inner-banner-wrap .inner-banner-container::before {
+    background-color: #151515;
+    content: "";
+    display: block;
+    opacity: 0.65;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.navbar-link {
+    background-color: rgba(255, 0, 0, 0.5); /* replace with actual color values */
+}
+
+.navbar-link .breadcrumbs {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-link .breadcrumbs .breadcrumbs-item,
+.navbar-link .breadcrumbs a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
