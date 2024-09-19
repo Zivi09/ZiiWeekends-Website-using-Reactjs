@@ -1,25 +1,145 @@
-- 👋 # Welcome to Web Crafters! 🎨
 
-Hi there! I'm **Lucky Rawat**, a passionate software developer with over 4 years of experience in the field. Welcome to my GitHub repository, where I share code and resources related to the content on my YouTube channel, **Web Crafters**.
+# Travel Booking Web Application
 
-## About the Channel
+This is a simple travel booking web application built using React.js. It allows users to search for travel packages, filter results, view detailed packages, and make bookings. The project includes a variety of useful libraries for UI components, routing, image galleries, and date pickers.
+(note: the development is underprocess hence some functionality may not be functioning
+## Features
 
-On **Web Crafters**, I share daily content focused on creating responsive UIs using Angular, React, and other modern web development technologies. Whether you're a beginner or an experienced developer, you'll find tutorials, tips, and tricks to enhance your skills and build amazing web applications.
+- Travel package listings
+- Search and filter functionality
+- Detailed package page
+- Booking form
+- API integration (mock data)
+- Mobile responsiveness
+- Image galleries
+- Date pickers
+- State management (optional)
 
-### What You'll Find Here
+## Libraries and Tools Used
 
-- **Source Code**: Access to the code demonstrated in my YouTube tutorials.
-- **Snippets**: Handy code snippets for various UI components.
-- **Projects**: Full-fledged projects to help you practice and improve your skills.
+- **React**: Core library for building the user interface.
+- **Bootstrap**: Styling framework for responsive design.
+- **React-Bootstrap**: React components based on Bootstrap.
+- **React-Router-Dom**: For managing routing and navigation.
+- **React-Datepicker**: For selecting travel dates.
+- **React-Slick**: For displaying carousels/sliders of travel packages.
+- **Slick-Carousel**: Required for `react-slick` functionality.
+- **React-Image-Gallery**: For displaying an image gallery of travel destinations.
+- **React-Lightbox-Gallery**: For lightbox gallery functionality.
 
-## Support & Subscribe
+## Prerequisites
 
-If you find my content helpful, please consider supporting the channel by subscribing and sharing the videos. Your support helps me continue creating valuable content for the community.
+Ensure you have Node.js and npm installed on your system:
 
-- **YouTube**: [@Web.Crafters](https://www.youtube.com/@Web.Crafters)
-- **Instagram**: [web.crafters2024](https://www.instagram.com/web.crafters2024)
-- **Facebook**: [Web-Crafters/61564137717276](https://www.facebook.com/people/Web-Crafters/61564137717276/)
+```bash
+node -v
+npm -v
+```
 
-Join our community, and let's code beautiful UIs together!
+If not installed, download from [Node.js official website](https://nodejs.org/).
 
-Happy coding! 🚀
+## Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/travel-app.git
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```bash
+   cd travel-app
+   ```
+
+3. **Install dependencies**:
+
+   To avoid any peer dependency issues, install using the following command:
+
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+4. **Start the application**:
+
+   Once the dependencies are installed, start the development server with:
+
+   ```bash
+   npm start
+   ```
+
+   The app will open in your default web browser at [http://localhost:3000](http://localhost:3000).
+
+## How to Use
+
+### Running the Application
+
+To run the application in development mode:
+
+```bash
+npm start
+```
+
+This will start a local server, and you can view the application at `http://localhost:3000`.
+
+### Building for Production
+
+To build the app for production to optimize performance:
+
+```bash
+npm run build
+```
+
+This will create a `build` directory with all the static files needed for deployment.
+
+### Testing
+
+To run the tests:
+
+```bash
+npm test
+```
+
+This will run the test cases configured for the project.
+
+## Project Structure
+
+```bash
+travel-app/
+├── node_modules/
+├── public/
+│   ├── index.html
+├── src/
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Page components (Home, Package Details, etc.)
+│   ├── assets/             # Images and static files
+│   ├── App.js              # Main application file
+│   ├── index.js            # Entry point for the app
+├── .gitignore              # Files to ignore in version control
+├── package.json            # Dependencies and scripts
+└── README.md               # Documentation
+```
+
+## Key Dependencies
+
+- `react`: Core UI library.
+- `react-router-dom`: Handles navigation and routing.
+- `bootstrap` & `react-bootstrap`: UI components and styles.
+- `react-datepicker`: Date picker for booking dates.
+- `react-slick` & `slick-carousel`: Carousel for displaying travel packages.
+- `react-image-gallery`: Image gallery for showcasing packages.
+- `react-lightbox-gallery`: Lightbox for viewing images.
+
+## Troubleshooting
+
+- If you encounter peer dependency issues during installation, use:
+
+  ```bash
+  npm install --legacy-peer-deps
+  ```
+
+- For any other errors, please check the `npm` log file mentioned in the error message for detailed information.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
